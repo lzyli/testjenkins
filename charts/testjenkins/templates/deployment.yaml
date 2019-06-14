@@ -52,22 +52,3 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2019-05-23T02:56:21Z"
-    lastUpdateTime: "2019-05-29T08:00:46Z"
-    message: ReplicaSet "configserver-7cfc56b756" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  - lastTransitionTime: "2019-05-30T09:45:46Z"
-    lastUpdateTime: "2019-05-30T09:45:46Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  observedGeneration: 4
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
