@@ -15,6 +15,7 @@ pipeline {
         PREVIEW_NAMESPACE = "$APP_NAME-$BRANCH_NAME".toLowerCase()
         HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
       }
+    }
     stage('Build Release') {
       when {
         branch 'master'
