@@ -22,7 +22,7 @@ pipeline {
           sh "echo \$(jx-release-version) > VERSION"
           sh "jx step tag --version \$(cat VERSION)"
           
-          sh "export VERSION=`cat VERSION"
+          sh "export VERSION=`cat VERSION`"
         }
       }
     }
